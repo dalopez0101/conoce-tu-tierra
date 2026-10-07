@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto y Asistencia al Turista</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Honduras cultural</title>
+        <link rel="stylesheet" href="styles/contacto.css">
+    </head>
 <body>
-
-    <header>
-        <h1>Contacto y Asistencia al Turista</h1>
-        <p>Estamos aquí para ayudarte durante tu experiencia en Honduras.</p>
-    </header>
-
+        <header>
+            <h1>Honduras cultural: Contacto y asistencia al turista</h1>
+            <p>Donde cada comunidad te cuenta una historia y cada tradición te comparte un hogar.</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos y rutas</a></li>
+                <li><a href="cultura.html">Cultura y gastronomia</a></li>
+                <li><a href="reservaciones.html">Reservaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <main>
             <section>
 
@@ -94,145 +101,72 @@
                 </div>
 
             </section>
-
-
-            <!-- Información de contacto -->
+            
             <section>
 
                 <h2>Contacto y Asistencia</h2>
-
                 <div>
-
                     <h3>Teléfonos de asistencia</h3>
 
                     <p>
                         <strong>Emergencias:</strong>
                         <a href="tel:911">911</a>
                     </p>
-
                     <p>
                         <strong>Asistencia vial:</strong>
-                        <a href="tel:+50400000000">+504 0000-0000</a>
+                        <a href="tel:+50411223344">+504 1122-3344</a>
                     </p>
-
                     <p>
                         <strong>Asistencia turística:</strong>
-                        <a href="tel:+50400000000">+504 0000-0000</a>
+                        <a href="tel:+50412341234">+504 1234-1234</a>
                     </p>
-
                 </div>
 
                 <div>
-
                     <h3>Correo electrónico</h3>
-
                     <p>
-                        <a href="mailto:info@turismo.hn">
-                            info@turismo.hn
-                        </a>
+                        <a href="mailto:conocetutierra@cultura.com">conocetutierra@cultura.com</a>
                     </p>
-
                 </div>
-
             </section>
 
 
-            <!-- Canales digitales -->
             <section>
-
                 <h2>Canales Digitales Institucionales</h2>
-
                 <ul>
-
                     <li>
-                        <a href="#" target="_blank">
-                            Facebook
+                        <a href="https://www.instagram.com/conocetutierra/" target="_blank" aria-label="Instagram">
+                            <img src="images/igIco.jpeg" alt="instagram" width="50">
+                            @conocetutierrahn
                         </a>
                     </li>
-
-                    <li>
-                        <a href="#" target="_blank">
-                            Instagram
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" target="_blank">
-                            X / Twitter
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" target="_blank">
-                            YouTube
-                        </a>
-                    </li>
-
                 </ul>
-
             </section>
 
 
-            <!-- Formulario de consultas -->
+            <!-- consultas -->
             <section>
-
                 <h2>Consultas y Asistencia Ciudadana</h2>
-
                 <p>
                     Utiliza este formulario para realizar consultas,
                     enviar comentarios o solicitar asistencia.
                 </p>
-
-                <form action="#" method="post">
-
+                <form action="help.php" method="post">
                     <div>
-
-                        <label for="nombre">
-                            Nombre completo
-                        </label>
-
-                        <input
-                            type="text"
-                            id="nombre"
-                            name="nombre"
-                            required
-                            minlength="5"
-                            maxlength="100"
-                            autocomplete="name">
-
+                        <label for="">ingrese su nombre</label>
+                        <input type="text" name="nombre" required>
                     </div>
-
-
                     <div>
-
-                        <label for="correo">
-                            Correo electrónico
-                        </label>
-
-                        <input
-                            type="email"
-                            id="correo"
-                            name="correo"
-                            required
-                            maxlength="120"
-                            autocomplete="email">
-
+                        <label for="">ingrese su dni</label>
+                        <input type="number" name="dni" id="dni" required minlength="13" maxlength="13">
                     </div>
-
-
                     <div>
-
-                        <label for="telefono">
-                            Número telefónico
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="telefono"
-                            name="telefono"
-                            pattern="[+]?[0-9\s-]{8,15}"
-                            autocomplete="tel">
-
+                        <label for="">telefono</label>
+                        <input type="number" name="telefono" id="telefono" required minlength="8" maxlength="8">
+                    </div>
+                    <div>
+                        <label for="">correo</label>
+                        <input type="email" name="correo" id="correo" required>
                     </div>
 
 
@@ -366,7 +300,7 @@
 
             <ul>
                 <li>
-                    <a href="https://conocetutierra@cultura.com">conocetutierra@cultura.com</a>
+                    <a href="mailto:conocetutierra@cultura.com">conocetutierra@cultura.com</a>
                 </li>
                 <li>
                     <a href="https://wa.me/50411223344">

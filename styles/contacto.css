@@ -1,0 +1,37 @@
+.mapa {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-image: url("../images/mapaHn.avif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ubicacion {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.punto {
+    font-size: 30px;
+    color: red;
+}
+
+.san-pedro {
+    top: 38%;
+    left: 30%;
+}
+
+.la-ceiba {
+    top: 30%;
+    left: 45%;
+}
+
+.tegucigalpa {
+    top: 55%;
+    left: 40%;
+}
