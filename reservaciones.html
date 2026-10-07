@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Honduras cultural</title>
+    </head>
+    <body>
+        <header>
+            <h1>Honduras cultural: Reservaciones</h1>
+            <p>Donde cada comunidad te cuenta una historia y cada tradición te comparte un hogar.</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos y rutas</a></li>
+                <li><a href="cultura.html">Cultura y gastronomia</a></li>
+                <li><a href="reservaciones.html">Reservaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <form action="formulario.php" method="post">
+                <fieldset>
+                    <legend>informacion del turista</legend>
+                    <div>
+                        <label for="">ingrese su nombre</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="">ingrese su dni</label>
+                        <input type="number" name="dni" id="dni" required minlength="13" maxlength="13">
+                    </div>
+                    <div>
+                        <label for="">telefono</label>
+                        <input type="number" name="telefono" id="telefono" required minlength="8" maxlength="8">
+                    </div>
+                    <div>
+                        <label for="">correo</label>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información del viaje</legend>
+
+                    <label for="destino">Circuito turístico o destino</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">Seleccione un destino</option>
+                        <option value="copan">Ruta Maya y Copán</option>
+                        <option value="islas">Islas de la Bahía</option>
+                        <option value="lenca">Ruta Lenca</option>
+                        <option value="caribe">Ruta del Caribe</option>
+                        <option value="cafe">Ruta del Café</option>
+                        <option value="naturaleza">Montañas y naturaleza</option>
+                        <option value="historico">Circuito histórico y cultural</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="inicio">Fecha de inicio</label>
+                    <input type="date"  id="inicio" name="inicio" required>
+
+                    <label for="retorno">Fecha de retorno</label>
+                    <input type="date" id="retorno" name="retorno" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Número de visitantes</legend>
+
+                    <label for="adultos">Adultos</label>
+                    <input type="number" id="adultos" name="adultos" min="1" max="50" value="1" required >
+
+                    <label for="menores">Menores</label>
+                    <input type="number" id="menores" name="menores" min="0" max="50" value="0" >
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo de hospedaje</legend>
+
+                    <label>
+                        <input type="radio" name="hospedaje" value="cabana" required >
+                        Cabaña ecológica
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hospedaje" value="hotel" >
+                        Hotel colonial
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hospedaje" value="campamento" >
+                        Campamento de montaña
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Necesidades especiales</legend>
+
+                    <label>
+                        <input type="checkbox" name="accesibilidad" value="si" >
+                        Necesidades de accesibilidad
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="guia_bilingue" value="si" >
+                        Guía bilingüe
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="movilidad" value="si" >
+                        Asistencia para movilidad
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información adicional</legend>
+
+                    <label for="comentarios">
+                        Comentarios o necesidades adicionales
+                    </label>
+
+                    <textarea id="comentarios" name="comentarios" rows="5" maxlength="500" placeholder="Escriba aquí cualquier información adicional:" ></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Compromiso de conservación</legend>
+
+                    <label>
+                        <input type="checkbox" name="compromiso" value="acepto" required >
+                        Confirmo que me comprometo a respetar las normas
+                        de conservación ecológica y protección del patrimonio
+                        natural y cultural de Honduras.
+                    </label>
+
+                </fieldset>
+
+                <button type="submit">
+                    Solicitar reservación
+                </button>
+
+                <button type="reset">
+                    Limpiar formulario
+                </button>
+
+            </form>
+        </main>
+
+        <footer>
+            <h2>Informacion del desarrollador</h2>
+
+            <p>
+                pagina web desarrollada por:
+                <strong>David Antonio Lopez Castellanos</strong>
+            </p>
+            <p>
+                numero de cuenta:
+                <strong>20221002660</strong>
+            </p>
+            <p>
+                &copy; 2026 Conoce Tu Tierra.
+                todos los derechos reservados
+            </p>
+
+            <h3>Redes Sociales</h3>
+
+            <ul>
+                <li>
+                    <a href="https://conocetutierra@cultura.com">conocetutierra@cultura.com</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/50411223344">
+                    WhatsApp</a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
+</html>

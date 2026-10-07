@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Asistencia al Turista</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contacto y Asistencia al Turista</h1>
+        <p>Estamos aquí para ayudarte durante tu experiencia en Honduras.</p>
+    </header>
+
+        <main>
+            <section>
+
+                <h2>Oficinas de Información Turística</h2>
+
+                <article>
+                    <h3>Tegucigalpa</h3>
+                    <p>
+                        <strong>Ubicación:</strong>
+                        Centro histórico de Tegucigalpa
+                    </p>
+                    <p>
+                        <strong>Referencia:</strong>
+                        Cerca de los principales puntos turísticos de la ciudad.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>San Pedro Sula</h3>
+                    <p>
+                        <strong>Ubicación:</strong>
+                        segunda planta del Mall Galerias
+                    </p>
+                    <p>
+                        <strong>Referencia:</strong>
+                        Oficinas de atencion junto a jetstereo
+                    </p>
+                </article>
+
+                <article>
+                    <h3>La Ceiba</h3>
+                    <p>
+                        <strong>Ubicación:</strong>
+                        Colonia El Sauce, primera etapa
+                    </p>
+                    <p>
+                        <strong>Referencia:</strong>
+                        Punto de atención cercano a las principales rutas turísticas.
+                    </p>
+                </article>
+
+            </section>
+
+            <section>
+
+                <h2>Mapa y Ubicación</h2>
+
+                <div class="mapa-esquematico">
+
+                    <h3>Oficinas de Información Turística</h3>
+
+                    <div class="mapa">
+
+                        <!-- San Pedro Sula -->
+                        <div class="ubicacion san-pedro">
+                            <span class="punto">●</span>
+                            <span>San Pedro Sula</span>
+                        </div>
+
+                        <!-- La Ceiba -->
+                        <div class="ubicacion la-ceiba">
+                            <span class="punto">●</span>
+                            <span>La Ceiba</span>
+                        </div>
+
+                        <!-- Tegucigalpa -->
+                        <div class="ubicacion tegucigalpa">
+                            <span class="punto">●</span>
+                            <span>Tegucigalpa</span>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Puntos de referencia de nuestras principales oficinas
+                        de información turística.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Información de contacto -->
+            <section>
+
+                <h2>Contacto y Asistencia</h2>
+
+                <div>
+
+                    <h3>Teléfonos de asistencia</h3>
+
+                    <p>
+                        <strong>Emergencias:</strong>
+                        <a href="tel:911">911</a>
+                    </p>
+
+                    <p>
+                        <strong>Asistencia vial:</strong>
+                        <a href="tel:+50400000000">+504 0000-0000</a>
+                    </p>
+
+                    <p>
+                        <strong>Asistencia turística:</strong>
+                        <a href="tel:+50400000000">+504 0000-0000</a>
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Correo electrónico</h3>
+
+                    <p>
+                        <a href="mailto:info@turismo.hn">
+                            info@turismo.hn
+                        </a>
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Canales digitales -->
+            <section>
+
+                <h2>Canales Digitales Institucionales</h2>
+
+                <ul>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            X / Twitter
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">
+                            YouTube
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- Formulario de consultas -->
+            <section>
+
+                <h2>Consultas y Asistencia Ciudadana</h2>
+
+                <p>
+                    Utiliza este formulario para realizar consultas,
+                    enviar comentarios o solicitar asistencia.
+                </p>
+
+                <form action="#" method="post">
+
+                    <div>
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                            minlength="5"
+                            maxlength="100"
+                            autocomplete="name">
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required
+                            maxlength="120"
+                            autocomplete="email">
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="telefono">
+                            Número telefónico
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            pattern="[+]?[0-9\s-]{8,15}"
+                            autocomplete="tel">
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="tipo">
+                            Tipo de solicitud
+                        </label>
+
+                        <select
+                            id="tipo"
+                            name="tipo"
+                            required>
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="consulta">
+                                Consulta general
+                            </option>
+
+                            <option value="comentario">
+                                Comentario
+                            </option>
+
+                            <option value="asistencia">
+                                Solicitud de asistencia
+                            </option>
+
+                            <option value="informacion">
+                                Solicitud de información turística
+                            </option>
+
+                            <option value="otro">
+                                Otro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="asunto">
+                            Asunto
+                        </label>
+
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            required
+                            maxlength="150">
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            required
+                            minlength="10"
+                            maxlength="1000"
+                            placeholder="Escriba su consulta o solicitud...">
+                        </textarea>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="privacidad"
+                                required>
+
+                            Acepto el tratamiento de mis datos
+                            para atender esta solicitud.
+                        </label>
+
+                    </div>
+
+
+                    <div>
+
+                        <button type="submit">
+                            Enviar solicitud
+                        </button>
+
+                        <button type="reset">
+                            Limpiar formulario
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+    
+        <footer>
+            <h2>Informacion del desarrollador</h2>
+
+            <p>
+                pagina web desarrollada por:
+                <strong>David Antonio Lopez Castellanos</strong>
+            </p>
+            <p>
+                numero de cuenta:
+                <strong>20221002660</strong>
+            </p>
+            <p>
+                &copy; 2026 Conoce Tu Tierra.
+                todos los derechos reservados
+            </p>
+
+            <h3>Redes Sociales</h3>
+
+            <ul>
+                <li>
+                    <a href="https://conocetutierra@cultura.com">conocetutierra@cultura.com</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/50411223344">
+                    WhatsApp</a>
+                </li>
+            </ul>
+        </footer>
+
+</body>
+</html>
