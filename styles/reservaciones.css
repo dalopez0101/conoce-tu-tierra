@@ -1,0 +1,276 @@
+
+:root {
+    --verde-oscuro: #164734;
+    --verde: #26734d;
+    --verde-claro: #eaf4ed;
+    --dorado: #d4a843;
+    --blanco: #ffffff;
+    --gris: #647067;
+    --borde: #d8e3da;
+    --fondo: #f4f8f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú */
+nav {
+    background-color: #003049;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #0077b6;
+}
+
+
+form {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: var(--blanco);
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(22, 71, 52, 0.12);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #26382d;
+}
+
+fieldset {
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* titulo de cada seccion*/
+legend {
+    padding: 8px 16px;
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+}
+
+#infoPersonal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+#infoPersonal legend {
+    grid-column: 1 / -1;
+}
+
+#infoPersonal div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--verde-oscuro);
+}
+
+form input:not([type="checkbox"]):not([type="radio"]),
+form select {
+    width: 100%;
+    min-height: 45px;
+    padding: 12px 14px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    background-color: #fbfdfb;
+    color: #26382d;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+form input:not([type="checkbox"]):not([type="radio"]):focus,
+form select:focus {
+    border-color: var(--verde);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(38, 115, 77, 0.12);
+}
+
+#infoViaje label {
+    margin-top: 16px;
+}
+
+#infoViaje label:first-of-type {
+    margin-top: 5px;
+}
+
+#nVisitantes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 20px;
+}
+
+#nVisitantes legend {
+    grid-column: 1 / -1;
+}
+
+#nVisitantes label {
+    margin-bottom: 0;
+}
+
+#hospedaje label,
+#datosAdjuntos label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 15px;
+    margin: 10px 0;
+    background-color: var(--fondo);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#hospedaje label:hover,
+#datosAdjuntos label:hover {
+    background-color: var(--verde-claro);
+    border-color: #b8d3bf;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    accent-color: var(--verde);
+    cursor: pointer;
+}
+
+#checkCompromiso {
+    background-color: var(--verde-claro);
+    border-color: #c7dfcd;
+}
+
+#checkCompromiso label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.7;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#checkCompromiso input {
+    margin-top: 4px;
+}
+
+form button {
+    display: inline-block;
+    padding: 14px 24px;
+    margin: 5px 8px 0 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+}
+
+form button[type="submit"] {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    box-shadow: 0 4px 10px rgba(22, 71, 52, 0.18);
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--verde);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(22, 71, 52, 0.22);
+}
+
+form button[type="reset"] {
+    background-color: #edf1ed;
+    color: #405348;
+    border: 1px solid var(--borde);
+}
+
+form button[type="reset"]:hover {
+    background-color: #dce6dd;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+/*informacion personal*/
+footer {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2,
+footer h3 {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: #90e0ef;
+}

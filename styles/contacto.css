@@ -1,3 +1,199 @@
+
+:root {
+    --verde-oscuro: #164734;
+    --verde: #26734d;
+    --verde-claro: #eaf4ed;
+    --dorado: #d4a843;
+    --blanco: #ffffff;
+    --gris: #647067;
+    --borde: #d8e3da;
+    --fondo: #f4f8f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Menú */
+nav {
+    background-color: #003049;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #0077b6;
+}
+
+
+form {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: var(--blanco);
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(22, 71, 52, 0.12);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #26382d;
+}
+
+fieldset {
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#ubicacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#ubicacion h2 {
+    width: 100%;
+}
+
+#ubicacion article {
+    flex: 1;
+    min-width: 220px;
+    padding: 15px;
+    background-color: #eaf4ed;
+    border-left: 4px solid #26734d;
+    border-radius: 8px;
+}
+
+#mapa-esquematico {
+    text-align: center;
+}
+
+#mapa-esquematico .mapa-esquematico {
+    padding: 20px;
+    background-color: #eaf4ed;
+    border-radius: 10px;
+}
+
+#asistenciaTuristica > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding: 15px;
+    background-color: #f4f8f4;
+    border-radius: 8px;
+}
+
+#contactar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contactar a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #eaf4ed;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #164734;
+}
+
+#consultas form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#consultas form > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40%;
+    gap: 8px;
+}
+
+#consultas input:not([type="checkbox"]),
+#consultas select,
+#consultas textarea {
+    padding: 10px;
+    border: 1px solid #cbd9ce;
+    border-radius: 6px;
+}
+
+#consultas form > div:nth-last-child(2),
+#consultas form > div:last-child {
+    flex-basis: 100%;
+}
+
+#consultas input[type="checkbox"] {
+    accent-color: #26734d;
+}
+
+#consultas button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #164734;
+    color: white;
+    cursor: pointer;
+}
+
+#consultas button[type="reset"] {
+    background-color: #dce5dd;
+    color: #164734;
+}
+
+@media (max-width: 600px) {
+    #asistenciaTuristica > div {
+        width: 100%;
+    }
+
+    #consultas form > div {
+        flex-basis: 100%;
+    }
+}
+
+
+
 .mapa {
     position: relative;
     width: 700px;
@@ -34,4 +230,31 @@
 .tegucigalpa {
     top: 55%;
     left: 40%;
+}
+
+
+
+
+
+
+
+/*informacion personal*/
+footer {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2,
+footer h3 {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: #90e0ef;
 }
